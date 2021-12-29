@@ -74,3 +74,7 @@ openssl x509 \
   -days 365 \
   -out client.crt
 ```
+
+```
+curl   --cacert ca.crt   --key client.key   --cert client.crt   https://localhost:3000
+```
